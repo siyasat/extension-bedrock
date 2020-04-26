@@ -1,0 +1,16 @@
+{
+    "name": "Siyasat Bedrock",
+    "version": "2.0",
+    "description": "Your bridge to fact-checking organizations.",
+    "manifest_version": 2,
+    "permissions":["storage","tabs","<all_urls>","contextMenus"],
+    "background": {
+        "page": "daemon.html",
+        "persistent": true
+    },
+    "icons": {
+        "16":"assets/icons/icon-16.png",
+        "48":"assets/icons/icon-48.png",
+        "128":"assets/icons/icon-128.png"
+    }
+}
