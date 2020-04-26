@@ -4,7 +4,7 @@
  * All Rights Reserved
  */
 
-export const Siyasat = {
+export const SiyasatUtils = {
     handleUrlLoad (tab_id, change_info, tab) {
         console.log(change_info);
     }

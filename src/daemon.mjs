@@ -1,6 +1,6 @@
 // Import Modules
 import { Browser } from './libs/browser.js';
-import { Siyasat } from './libs/siyasat.js';
+import { SiyasatUtils } from './libs/siyasat-utils.js';
 
 // Get Browser object
 const browser = Browser.get();
@@ -57,5 +57,5 @@ runtime.onMessage.addListener(object => {
  */
 browser.tabs.onUpdated.addListener((tab_id, change_info, tab) => {
     // Handle URL Load
-    if(change_info.status === 'loading' && change_info.url) Siyasat.handleUrlLoad(tab_id, change_info, tab);
+    if(change_info.status === 'loading' && change_info.url) SiyasatUtils.handleUrlLoad(tab_id, change_info, tab);
 });
